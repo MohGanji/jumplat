@@ -14,5 +14,15 @@ const Utility = {
         let coef = Math.min(1 - (1 / Math.log(Math.max(1, value))), 1)
         let ret = Math.max(min, max * coef)
         return ret
-    }
+    },
+    debounce: function (func, wait = 100) {
+        let isRunning = false;
+        return function(...args) {
+            if(!isRunning) {
+                isRunning = true
+                func.apply(this, args)
+                setTimeout(() => {isRunning = false}, wait)
+            }
+        }
+    },
 }

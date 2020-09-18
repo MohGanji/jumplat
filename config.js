@@ -23,4 +23,6 @@ const CONFIG = {
     GAME_CONTAINER_ID: 'game-container',
     GAME_WIDTH: document.getElementById('game-container').offsetWidth,
     GAME_UPDATE_INTERVAL_MS: 20,
+
+    CLICK_DEBOUNCE_MS: 250,
 }
