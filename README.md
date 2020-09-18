@@ -7,4 +7,4 @@ Developed for the purpose of [Tapsi techthon](https://tapsi.ir/techthon)
 better played on mobile
 
 ### Play it here:
-TODO: add github pages link
+Play it [Here](https://mohganji.github.io/jumplat/)
