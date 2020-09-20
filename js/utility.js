@@ -6,7 +6,7 @@ const Utility = {
         return slope * value + offset
     },
     reverseLogarithmFunc: function(value, min, max) {  
-        let coef = Math.min(1 / Math.log(value), 1)
+        let coef = Math.min(CONFIG.PLATFORM_WIDTH_SMOOTHING_COEF / Math.log(value), 1)
         let ret = Math.max(min, max * coef)
         return ret
     },
