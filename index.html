@@ -18,27 +18,6 @@
     <link rel="stylesheet" type="text/css" href="./css/player-shapes.css" media="screen" />
     <link rel="icon" href="data:;base64,iVBORw0KGgo=">
     
-    <link rel="manifest" href="./manifest.json">
-    <!-- Najva Push Notification -->
-        <script type="text/javascript">
-            (function(){
-                var now = new Date();
-                var version = now.getFullYear().toString() + "0" + now.getMonth() + "0" + now.getDate() +
-                    "0" + now.getHours();
-                var head = document.getElementsByTagName("head")[0];
-                var link = document.createElement("link");
-                link.rel = "stylesheet";
-                link.href = "https://app.najva.com/static/css/local-messaging.css" + "?v=" + version;
-                head.appendChild(link);
-                var script = document.createElement("script");
-                script.type = "text/javascript";
-                script.async = true;
-                script.src = "https://app.najva.com/static/js/scripts/github529-website-20776-30e9901b-ab99-46a1-8631-48da18dd9672.js" + "?v=" + version;
-                head.appendChild(script);
-                })()
-        </script>
-    <!-- END NAJVA PUSH NOTIFICATION -->
-      
 </head>
 <body>
     <div class=app>
